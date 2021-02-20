@@ -1,8 +1,8 @@
-# sqlite-celery-concurrency
+# SQLite-Celery-Concurrency
 Main objective for this mini project is to test if SQLite can handle concurrency read performed by [Celery](https://docs.celeryproject.org/en/stable/index.html).
 <br><br>
 
-<h2>Setting Up</h2>
+<h2>⚙️ Setting Up</h2>
 In order to run the program in this repository, we must install stuff first.
 <br><br>
 <h3>1. Install Celery</h3>
@@ -38,7 +38,7 @@ Prior to running the actual program, we need to have Celery and RabbitMQ both ru
 &nbsp;&nbsp;&nbsp;&nbsp;(You can omit `-c 3`. To learn more about basic configuration, visit [here](https://docs.celeryproject.org/en/stable/getting-started/next-steps.html#starting-the-worker))
 <br><br>
 
-<h2>Running the Program</h2>
+<h2>💻 Running the Program</h2>
 With everything up and running, go ahead and run the following command :
 <br><br>
 
