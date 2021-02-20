@@ -1,4 +1,8 @@
 # SQLite-Celery-Concurrency
+[![Python Versions](https://img.shields.io/pypi/pyversions/yt2mp3.svg)](https://pypi.python.org/pypi/yt2mp3/)
+![Celery](https://img.shields.io/badge/-Celery-eee?style=flat&logo=celery&logoColor=678d2c)
+![RabbitMQ](https://img.shields.io/badge/-RabbitMQ-eee?style=flat&logo=rabbitmq&logoColor=f76401)
+
 Main objective for this mini project is to test if SQLite can handle concurrency read performed by [Celery](https://docs.celeryproject.org/en/stable/index.html).
 <br><br>
 
