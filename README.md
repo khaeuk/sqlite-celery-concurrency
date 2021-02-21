@@ -46,9 +46,12 @@ Prior to running the actual program, we need to have Celery and RabbitMQ both ru
 With everything up and running, go ahead and run the following command :
 <br><br>
 
-&nbsp;&nbsp;&nbsp;&nbsp;`python test_celery.py`
+&nbsp;&nbsp;&nbsp;&nbsp;`python test_concurency_read.py`
 <br><br>
 You should expect such result :
 <br><br>
-&nbsp;&nbsp;&nbsp;&nbsp;`Parallele example result :
-[0, 2, 8, 18, 32, 50, 72, 98, 128, 162]`
+&nbsp;&nbsp;&nbsp;&nbsp;`Single task example result :
+[(1, 5.1, 3.5, 1.4, 0.2, 'Iris-setosa'), (2, 4.9, 3, 1.4, 0.2, 'Iris-setosa'), (3, 4.7, 3.2, 1.3, 0.2, 'Iris-setosa'), (4, 4.6, 3.1, 1.5, 0.2, 'Iris-setosa'), (5, 5, 3.6, 1.4, 0.2, 'Iris-setosa')]
+Multiple parallel tasks example result :
+[[[1, 5.1, 3.5, 1.4, 0.2, 'Iris-setosa'], [2, 4.9, 3, 1.4, 0.2, 'Iris-setosa'], [3, 4.7, 3.2, 1.3, 0.2, 'Iris-setosa'], [4, 4.6, 3.1, 1.5, 0.2, 'Iris-setosa'], [5, 5, 3.6, 1.4, 0.2, 'Iris-setosa']], [[51, 7, 3.2, 4.7, 1.4, 'Iris-versicolor'], [52, 6.4, 3.2, 4.5, 1.5, 'Iris-versicolor'], [53, 6.9, 3.1, 4.9, 1.5, 'Iris-versicolor'], [54, 5.5, 2.3, 4, 1.3, 'Iris-versicolor'], [55, 6.5, 2.8, 4.6, 1.5, 'Iris-versicolor']], [[101, 6.3, 3.3, 6, 2.5, 'Iris-virginica'], [102, 5.8, 2.7, 5.1, 1.9, 'Iris-virginica'], [103, 7.1, 3, 5.9, 2.1, 'Iris-virginica'], [104, 6.3, 2.9, 5.6, 1.8, 'Iris-virginica'], [105, 6.5, 3, 5.8, 2.2, 'Iris-virginica']]]`
+
